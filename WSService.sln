@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeMicroService", "Emp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeMSUnitTests", "EmployeeMSUnitTests\EmployeeMSUnitTests.csproj", "{551C8FC9-3309-4ACC-B33D-B52DF155F2B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APITester", "APITester\APITester.csproj", "{4FCB56F8-FDEE-4E51-8B55-5F0FEE566F49}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{551C8FC9-3309-4ACC-B33D-B52DF155F2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{551C8FC9-3309-4ACC-B33D-B52DF155F2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{551C8FC9-3309-4ACC-B33D-B52DF155F2B4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4FCB56F8-FDEE-4E51-8B55-5F0FEE566F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4FCB56F8-FDEE-4E51-8B55-5F0FEE566F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4FCB56F8-FDEE-4E51-8B55-5F0FEE566F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4FCB56F8-FDEE-4E51-8B55-5F0FEE566F49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -34,6 +34,8 @@ namespace EmployeeMicroService
                 {
                     Audience = ConfigurationManager.AppSettings["Audience"],
                     Tenant = ConfigurationManager.AppSettings["Tenant"]
+
+
                 });
         }
     }
