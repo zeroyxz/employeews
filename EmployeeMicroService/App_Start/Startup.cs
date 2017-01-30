@@ -2,6 +2,7 @@
 using Microsoft.Owin.Security.ActiveDirectory;
 using Owin;
 using System;
+using System.Diagnostics;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace EmployeeMicroService
     {
         public void Configuration(IAppBuilder app)
         {
+            Trace.TraceInformation("In EmployeeMicroService.StartUp.Configuration");
             HttpConfiguration config = new HttpConfiguration();
 
             ConfigureAuth(app);
@@ -29,9 +31,11 @@ namespace EmployeeMicroService
         {
             //any Api Controller added to this Web Api and decorated with [Authorize] attribute will only understand bearer tokens issued from this specified Active Directory 
             //Tenant and Application, any other form of tokens will be rejected and HTTP status code 401 will be returned
-            app.UseWindowsAzureActiveDirectoryBearerAuthentication(
+
+            Trace.TraceInformation("In EmployeeMicroService.Startup.ConfigureAuth - Reading configuration values");
+            app.UseWindowsAzureActiveDirectoryBearerAuthentication(                
                 new WindowsAzureActiveDirectoryBearerAuthenticationOptions
-                {
+                {                    
                     Audience = ConfigurationManager.AppSettings["Audience"],
                     Tenant = ConfigurationManager.AppSettings["Tenant"]
 
