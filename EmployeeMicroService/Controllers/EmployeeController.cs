@@ -62,7 +62,7 @@ namespace EmployeeMicroService.Controllers
 
             response.Headers.CacheControl = new CacheControlHeaderValue()
             {
-                MaxAge = TimeSpan.FromMinutes(1)
+                MaxAge = TimeSpan.FromMinutes(2)
             };
 
             return response;
