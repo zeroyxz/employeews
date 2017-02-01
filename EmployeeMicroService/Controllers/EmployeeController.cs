@@ -9,7 +9,7 @@ using EmployeeMicroService.Models;
 
 namespace EmployeeMicroService.Controllers
 {
-    [Authorize]
+    
     public class EmployeeController : ApiController
     {
         private IList<Employee> _employees;
